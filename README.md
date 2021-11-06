@@ -9,5 +9,31 @@
 
 6. struct (클래스와 유사한 구문, 상속 불가능, 인터페이스 구현 불가능)
 
+```cs
+class ExStruct
+    {
+        struct Point // 클래스와 유사한 구문, 상속 불가능, 인터페이스 구현 불가능
+        {
+            public int x;
+            public int y;
+            
+            public Point(int x, int y) // 구조테의 생성자는 매개변수를 넣어서 만들어야 한다. 
+            {
+                this.x = x;
+                this.y = y;
+            }
+        }
+        static void Main(string[] args)
+        {
+            Point p1 = new Point(); // 자동으로 생성
+            Point p2 = new Point(100, 200); // 100과 200으로 초기화로 생성
+            Point p;
+            p.x = 1;
+            p.y = 2;
+
+            Console.WriteLine("{0},{1}", p.x, p.y);
+        }
+    }
+```
 
 
