@@ -17,7 +17,7 @@ class ExStruct
             public int x;
             public int y;
             
-            public Point(int x, int y) //-- 구조테의 생성자는 매개변수를 넣어서 만들어야 한다. 
+            public Point(int x, int y) //-- 구조의 생성자는 매개변수를 넣어서 만들어야 한다. 
             {
                 this.x = x;
                 this.y = y;
